@@ -6,15 +6,16 @@ An example project implementing [Svelte Material UI](https://github.com/hperrin/
 
 1. Clone the repo.
 2. `npm install`
-3. `npm run build`
-4. `npm start`
-5. http://localhost:3000
+3. `npm run dev`
+4. http://localhost:3000
 
-I don't know why, but using `npm run dev` doesn't work right now. You get a 500 error with a message like this:
+There is a workaround that runs to prepare @material packages for Vite. Without the workaround, you will see this issue.
 
 ```
 ENOENT: no such file or directory, open '.../smui-example-sveltekit/node_modules/@material/ripple/index.ts'
 ```
+
+See: https://github.com/vitejs/vite/issues/2892
 
 # License
 
