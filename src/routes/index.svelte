@@ -1,16 +1,14 @@
-<div class="container">
-  <Button on:click={() => clicked++}>
-    <Icon class="material-icons">thumb_up</Icon>
-    <Label>Click Me</Label>
-  </Button>
-  <p class="mdc-typography--body1">
-    {#if clicked}
-      You've clicked the button {clicked} time{clicked === 1 ? "" : "s"}.
-    {:else}
-      <span class="grayed">You haven't clicked the button.</span>
-    {/if}
-  </p>
-</div>
+<Button on:click={() => clicked++}>
+  <Icon class="material-icons">thumb_up</Icon>
+  <Label>Click Me</Label>
+</Button>
+<p class="mdc-typography--body1">
+  {#if clicked}
+    You've clicked the button {clicked} time{clicked === 1 ? "" : "s"}.
+  {:else}
+    <span class="grayed">You haven't clicked the button.</span>
+  {/if}
+</p>
 
 <script>
   import Button, { Label, Icon } from "@smui/button/bare";
