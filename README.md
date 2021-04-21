@@ -19,7 +19,7 @@ See: https://github.com/vitejs/vite/issues/2892
 
 # License
 
-Copyright 2019 Hunter Perrin
+Copyright 2021 Hunter Perrin
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
