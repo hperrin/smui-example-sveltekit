@@ -15,10 +15,10 @@ module.exports = {
     vite: {
       ssr: {
         noExternal: [
-          "@smui/button",
-          "@smui/ripple",
-          "@material/ripple",
           ...Object.keys(pkg.dependencies || {}),
+          ...Object.keys(pkg.devDependencies || {}).filter((name) =>
+            name.startsWith("@smui")
+          ),
         ],
       },
     },
