@@ -1,15 +1,23 @@
 {
-  "name": "~TODO~",
+  "name": "smui-example-sveltekit",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "start": "svelte-kit start"
+    "start": "svelte-kit start",
+    "prepare": "npm run smui-theme-light && npm run smui-theme-dark",
+    "smui-theme-light": "sass --no-source-map -I src/theme -I node_modules src/app.scss static/smui.css",
+    "smui-theme-dark": "sass --no-source-map -I src/theme/dark -I node_modules src/app.scss static/smui-dark.css"
   },
   "devDependencies": {
+    "@material/theme": "^10.0.0",
+    "@material/typography": "^10.0.0",
+    "@smui/button": "^3.0.2",
     "@sveltejs/adapter-node": "next",
     "@sveltejs/kit": "next",
+    "sass": "^1.32.11",
     "svelte": "^3.29.0",
+    "svelte-material-ui": "^3.0.2",
     "vite": "^2.1.0"
   },
   "type": "module"

@@ -1,0 +1,11 @@
+@use 'svelte-material-ui/index' as svelte-material-ui;
+
+// Import the typography styles.
+//
+// MDC Typography
+//
+@use "@material/typography/mdc-typography";
+
+.container {
+  padding: 30px;
+}
