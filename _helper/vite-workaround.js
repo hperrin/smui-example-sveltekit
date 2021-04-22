@@ -1,11 +1,7 @@
 import path from "path";
-// var path = require("path"),
 import fs from "fs";
-//   fs = require("fs");
 
 function removeFiles(startPath, filter) {
-  //console.log('Starting from dir '+startPath+'/');
-
   if (!fs.existsSync(startPath)) {
     console.log("no dir ", startPath);
     return;
@@ -23,5 +19,6 @@ function removeFiles(startPath, filter) {
     }
   }
 }
-console.log("Starting Vite Workaround Scriot");
+
+console.log("Starting Vite Workaround Script");
 removeFiles("node_modules/@material", ".js.map");
