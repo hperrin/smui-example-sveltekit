@@ -11,6 +11,8 @@
   $error: color-palette.$red-700
 );
 
+@use '../app';
+
 html,
 body {
   background-color: #000;
