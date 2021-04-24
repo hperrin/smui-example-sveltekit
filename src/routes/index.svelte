@@ -11,7 +11,7 @@
 </p>
 
 <script>
-  import Button, { Label, Icon } from "@smui/button/bare";
+  import Button, { Label, Icon } from "@smui/button";
 
   let clicked = 0;
 </script>

@@ -8,7 +8,7 @@
 </div>
 
 <script>
-  import Button, { Label } from "@smui/button/bare";
+  import Button, { Label } from "@smui/button";
 
   let lightTheme =
     typeof window === "undefined" ||
