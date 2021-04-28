@@ -14,7 +14,7 @@ function removeFiles(startPath, filter) {
     if (stat.isDirectory()) {
       removeFiles(filename, filter); //recurse
     } else if (filename.indexOf(filter) >= 0) {
-      console.log("-- removing: ", filename);
+      console.log("-- removing file: ", filename);
       fs.unlinkSync(filename);
     }
   }
@@ -35,7 +35,7 @@ function removeSourceMaps(startPath) {
       let fileContent = fs.readFileSync(filename).toString();
       let result = fileContent.replace(/^\/\/# sourceMappingURL=.+$/gm, "");
       if (result !== fileContent) {
-        console.log("-- removing SourceMap: ", filename);
+        console.log("-- removing SourceMap link: ", filename);
         fs.writeFileSync(filename, result);
       }
     }
