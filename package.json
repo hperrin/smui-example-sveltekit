@@ -1,27 +1,28 @@
 {
   "name": "smui-example-sveltekit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "start": "svelte-kit start",
+    "preview": "svelte-kit preview",
     "prepare": "npm run vite-workaround && npm run smui-theme-light && npm run smui-theme-dark",
     "vite-workaround": "node _helper/vite-workaround.js",
     "smui-theme-light": "smui-theme compile static/smui.css -i src/theme",
     "smui-theme-dark": "smui-theme compile static/smui-dark.css -i src/theme/dark"
   },
   "dependencies": {
-    "@smui/button": "^4.1.0"
+    "@smui/button": "^4.2.0"
   },
   "devDependencies": {
-    "@material/theme": "^11.0.0",
-    "@material/typography": "^11.0.0",
-    "@sveltejs/adapter-node": "next",
+    "@material/theme": "^12.0.0",
+    "@material/typography": "^12.0.0",
+    "@sveltejs/adapter-node": "^1.0.0-next.35",
     "@sveltejs/kit": "next",
-    "sass": "^1.32.11",
-    "smui-theme": "^4.1.0",
-    "svelte": "^3.37.0",
-    "vite": "^2.2.3"
+    "sass": "^1.36.0",
+    "smui-theme": "^4.2.0",
+    "svelte": "^3.41.0",
+    "vite": "^2.4.4"
   },
   "type": "module"
 }

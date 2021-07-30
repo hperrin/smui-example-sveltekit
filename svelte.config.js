@@ -1,8 +1,11 @@
-const node = require("@sveltejs/adapter-node");
-const pkg = require("./package.json");
+import node from '@sveltejs/adapter-node';
+import { readFileSync } from 'fs';
+
+const packageUrl = new URL('package.json', import.meta.url)
+const pkg = JSON.parse(readFileSync(packageUrl, 'utf8'));
 
 /** @type {import('@sveltejs/kit').Config} */
-module.exports = {
+export default {
   kit: {
     // By default, `npm run build` will create a standard Node app.
     // You can create optimized builds for different platforms by
