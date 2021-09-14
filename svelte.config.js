@@ -1,7 +1,4 @@
 import preprocess from 'svelte-preprocess';
-import fs from 'fs';
-
-const pkg = JSON.parse(fs.readFileSync('./package.json'));
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,13 +8,7 @@ const config = {
 
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
-
-		vite: {
-			ssr: {
-				noExternal: Object.keys(pkg.devDependencies || {}).filter((dep) => dep.startsWith('@smui'))
-			}
-		}
+		target: '#svelte'
 	}
 };
 
