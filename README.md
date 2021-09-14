@@ -9,14 +9,6 @@ An example project implementing [Svelte Material UI](https://github.com/hperrin/
 3. `npm run dev`
 4. http://localhost:3000
 
-There is a workaround that runs to prepare @material packages for Vite. Without the workaround, you will see this issue.
-
-```
-ENOENT: no such file or directory, open '.../smui-example-sveltekit/node_modules/@material/ripple/index.ts'
-```
-
-See: https://github.com/vitejs/vite/issues/2892
-
 # License
 
 Copyright 2021 Hunter Perrin
