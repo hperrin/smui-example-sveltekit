@@ -2,8 +2,14 @@
 //
 // MDC Typography
 //
-@use "@material/typography/mdc-typography";
+@use '@material/typography/mdc-typography';
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
 
 .container {
-  padding: 30px;
+	padding: 30px;
 }
