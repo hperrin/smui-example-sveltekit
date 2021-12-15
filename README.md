@@ -9,6 +9,14 @@ An example project implementing [Svelte Material UI](https://github.com/hperrin/
 3. `npm run dev`
 4. http://localhost:3000
 
+# A Note About SvelteKit
+
+From the SvelteKit website:
+
+> SvelteKit is in early development, and some things may change before we hit version 1.0. This document is a work-in-progress. If you get stuck, reach out for help in the [Discord chatroom](https://svelte.dev/chat).
+
+As such, this repo might break during SvelteKit's development. If it does, please ping me (@SylphWeed) in [the SMUI support Discord channel](https://discord.gg/aFzmkrmg9P).
+
 # License
 
 Copyright 2021 Hunter Perrin
