@@ -8,14 +8,7 @@ const config = {
 
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
-
-		// ## This part is necessary for SMUI!
-		vite: {
-			ssr: {
-				noExternal: [/^@material\//, /^@smui(?:-extra)?\//]
-			}
-		}
+		target: '#svelte'
 	}
 };
 
