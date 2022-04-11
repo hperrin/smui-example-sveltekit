@@ -1,12 +1,7 @@
 <script lang="ts">
 	import Button from '@smui/button';
-	import TopAppBar, {
-		Row,
-		Section,
-		Title,
-		AutoAdjust,
-		TopAppBarComponentDev
-	} from '@smui/top-app-bar';
+	import type { TopAppBarComponentDev } from '@smui/top-app-bar';
+	import TopAppBar, { Row, Section, Title, AutoAdjust } from '@smui/top-app-bar';
 	import IconButton from '@smui/icon-button';
 	import { Label, Icon } from '@smui/common';
 	import { Svg } from '@smui/common/elements';
@@ -26,7 +21,7 @@
 		}
 		themeLink.href = `/smui${lightTheme ? '' : '-dark'}.css`;
 		document.head
-			.querySelector<HTMLLinkElement>('link[href="/smui-dark.css"]')
+			.querySelector<HTMLLinkElement>('link[href$="/smui-dark.css"]')
 			?.insertAdjacentElement('afterend', themeLink);
 	}
 </script>
