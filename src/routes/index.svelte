@@ -22,7 +22,7 @@
 <p class="mdc-typography--body1">
 	{#if clicked}
 		You've clicked the button {clicked} time{clicked === 1 ? '' : 's'}. You can
-		<a on:click={reset} href="javascript:void(0);">reset it</a>.
+		<a on:click={reset} href="{null}">reset it</a>.
 	{:else}
 		<span class="grayed">You haven't clicked the button.</span>
 	{/if}
