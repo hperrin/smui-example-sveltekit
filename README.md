@@ -6,8 +6,7 @@ An example project implementing [Svelte Material UI](https://github.com/hperrin/
 
 1. Clone the repo.
 2. `npm install`
-3. `npm run dev`
-4. http://localhost:3000
+3. `npm run dev -- --open`
 
 # A Note About SvelteKit
 
@@ -19,7 +18,7 @@ As such, this repo might break during SvelteKit's development. If it does, pleas
 
 # License
 
-Copyright 2021 Hunter Perrin
+Copyright 2021-2022 Hunter Perrin
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
