@@ -2,13 +2,13 @@
 
 An example project implementing [Svelte Material UI](https://github.com/hperrin/svelte-material-ui) with [SvelteKit](https://kit.svelte.dev/).
 
-# Get it Running
+## Get it Running
 
 1. Clone the repo.
 2. `npm install`
 3. `npm run dev -- --open`
 
-# A Note About SvelteKit
+## A Note About SvelteKit
 
 From the SvelteKit website:
 
@@ -16,9 +16,9 @@ From the SvelteKit website:
 
 As such, this repo might break during SvelteKit's development. If it does, please ping me (@SylphWeed) in [the SMUI support Discord channel](https://discord.gg/aFzmkrmg9P).
 
-# License
+## License
 
-Copyright 2021-2022 Hunter Perrin
+Copyright 2021-2023 Hunter Perrin
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
